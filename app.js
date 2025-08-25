@@ -4,22 +4,19 @@ const menu = dropdown.querySelector('.menu');
 
 toggle.addEventListener('click', (e) => {
   e.stopPropagation();
-  const open = menu.classList.toggle('show');
-  toggle.setAttribute('aria-expanded', String(open));
+  menu.classList.toggle('show');
 });
 
 /* Fecha ao clicar fora */
 document.addEventListener('click', () => {
   if (menu.classList.contains('show')) {
     menu.classList.remove('show');
-    toggle.setAttribute('aria-expanded', 'false');
   }
 });
 
-/* Fecha ao clicar em um item */
+/* Fecha ao clicar em um item do menu */
 menu.addEventListener('click', (e) => {
   if (e.target.tagName === 'A') {
     menu.classList.remove('show');
-    toggle.setAttribute('aria-expanded', 'false');
   }
 });
