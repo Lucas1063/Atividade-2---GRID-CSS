@@ -1,19 +1,19 @@
 {
-  "name": "Catálogo Responsivo",
+  "name": "Meu Catálogo Responsivo",
   "short_name": "Catálogo",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#dbeafe",
   "theme_color": "#1e3a8a",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "assets/meu logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "assets/meu logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }

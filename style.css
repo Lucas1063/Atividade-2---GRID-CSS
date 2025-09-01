@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -7,8 +10,9 @@ body {
   grid-template-areas:
     "header"
     "main"
-    "footer";
-  min-height: 100vh;
+    "footer"; 
+  height: 100vh;
+  min-height: unset;
 }
 
 header {
@@ -22,6 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Adicione esta linha */
 }
 
 .logo {
@@ -62,9 +67,25 @@ header {
 
 .item {
   background: #dbeafe;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   text-align: center;
+  height: 200px; /* Define altura fixa para a box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.produto-img {
+  max-width: 80px;   
+  max-height: 80px;   
+  width: auto;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  object-fit: contain; 
 }
 
 footer {

@@ -13,12 +13,13 @@
 
 <header>
   <nav class="navbar">
-    <div class="logo">Meu Catálogo</div>
+    <div class="logo">
+      <img src="assets/meu logo.png " alt="Minha Logo" style="height:40px;">
+    </div>
     <div class="dropdown">
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle">&#9776;</button>
       <ul class="menu">
         <li><a href="#">Início</a></li>
-        <li><a href="#">Catálogo</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
@@ -27,16 +28,38 @@
 </header>
 
   <main class="grid-container">
-    <section class="item destaque">Destaque</section>
-    <section class="item">Produto 1</section>
-    <section class="item">Produto 2</section>
-    <section class="item">Produto 3</section>
-    <section class="item">Produto 4</section>
+    <section class="item destaque">
+      <img src="assets/destaque.png" alt="Destaque" class="produto-img">
+      <p>Destaque</p>
+    </section>
+    <section class="item">
+      <img src="assets/produto1.png" alt="Produto 1" class="produto-img">
+      <p>Produto 1</p>
+    </section>
+    <section class="item">
+      <img src="assets/produto1.png" alt="Produto 2" class="produto-img">
+      <p>Produto 2</p>
+    </section>
+    <section class="item">
+      <img src="assets/produto1.png" alt="Produto 3" class="produto-img">
+      <p>Produto 3</p>
+    </section>  
+    <section class="item">
+      <img src="assets/produto1.png" alt="Produto 4" class="produto-img">
+      <p>Produto 4</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Meu Catálogo Responsivo</p>
+    <p>&copy; 2025 - Lucas Weigel</p>
   </footer>
   <script src="app.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('service-worker.js');
+    });
+  }
+</script>
 </body>
 </html>

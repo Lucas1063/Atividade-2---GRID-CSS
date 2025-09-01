@@ -20,3 +20,11 @@ menu.addEventListener('click', (e) => {
     menu.classList.remove('show');
   }
 });
+
+// Adicione este script ao final do seu HTML, antes do </body>
+// const menuToggle = document.querySelector('.menu-toggle');
+// const menu = document.querySelector('.menu');
+
+// menuToggle.addEventListener('click', () => {
+//   menu.classList.toggle('show');
+// });
