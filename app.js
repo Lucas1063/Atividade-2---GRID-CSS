@@ -7,24 +7,17 @@ toggle.addEventListener('click', (e) => {
   menu.classList.toggle('show');
 });
 
-/* Fecha ao clicar fora */
+
 document.addEventListener('click', () => {
   if (menu.classList.contains('show')) {
     menu.classList.remove('show');
   }
 });
 
-/* Fecha ao clicar em um item do menu */
+
 menu.addEventListener('click', (e) => {
   if (e.target.tagName === 'A') {
     menu.classList.remove('show');
   }
 });
 
-// Adicione este script ao final do seu HTML, antes do </body>
-// const menuToggle = document.querySelector('.menu-toggle');
-// const menu = document.querySelector('.menu');
-
-// menuToggle.addEventListener('click', () => {
-//   menu.classList.toggle('show');
-// });
