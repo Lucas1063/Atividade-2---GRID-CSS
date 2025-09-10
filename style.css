@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Adicione esta linha */
+  position: relative; 
 }
 
 .logo {
@@ -70,7 +70,7 @@ header {
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  height: 200px; /* Define altura fixa para a box */
+  height: 200px; 
   display: flex;
   flex-direction: column;
   align-items: center;

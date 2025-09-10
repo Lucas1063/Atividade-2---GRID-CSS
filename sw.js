@@ -8,7 +8,7 @@ const urlsToCache = [
   '/assets/meu logo.png',
   '/assets/destaque.png',
   '/assets/produto1.png',
-  // Adicione outros arquivos e imagens necessários
+
 ];
 
 self.addEventListener('install', event => {
